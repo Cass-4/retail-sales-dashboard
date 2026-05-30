@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 # 强制安装依赖（Streamlit Cloud 专用）
 import subprocess
 import sys
@@ -40,8 +42,6 @@ Run:
     pip install -r requirements_streamlit_dashboard_v6.txt
     streamlit run retail_sales_dashboard_streamlit_v6_no_top_gap.py
 """
-
-from __future__ import annotations
 
 from pathlib import Path
 from html import escape
