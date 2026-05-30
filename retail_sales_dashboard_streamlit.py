@@ -1,3 +1,23 @@
+# 强制安装依赖（Streamlit Cloud 专用）
+import subprocess
+import sys
+
+def install_package(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+# 安装所有需要的库
+install_package("streamlit>=1.20.0")
+install_package("pandas>=1.5.0")
+install_package("plotly>=5.10.0")
+install_package("numpy>=1.23.0")
+
+# 安装完成后，再导入库
+import streamlit as st
+import pandas as pd
+import plotly.express as px
+import numpy as np
+
+# 下面是你原来的代码...
 # -*- coding: utf-8 -*-
 """
 Retail Weekly Sales Forecasting Dashboard - Streamlit V6 No Top Gap
