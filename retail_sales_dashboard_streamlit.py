@@ -239,7 +239,7 @@ st.markdown(
 BASE_DIR = Path(__file__).resolve().parent if "__file__" in globals() else Path.cwd()
 
 DATA_FILES = {
-    "Cleaned sales data": BASE_DIR / "scenario3_cleaned.csv",
+    "Cleaned sales data": BASE_DIR / "sampled_data.csv",
     "Prediction data": BASE_DIR / "model_test_predictions.csv",
     "Feature importance": BASE_DIR / "random_forest_feature_importance.csv",
     "Model evaluation": BASE_DIR / "comprehensive_evaluation_table.csv",
